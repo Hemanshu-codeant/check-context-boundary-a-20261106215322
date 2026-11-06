@@ -1,0 +1,13 @@
+name: Trusted gate provenance control
+
+on:
+  workflow_dispatch:
+
+jobs:
+  trusted-gate:
+    name: trusted-gate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Emit synthetic control
+        run: printf '%s\n' 'trusted upstream control'
+
